@@ -1,4 +1,4 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<!-- 
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
@@ -18,4 +18,12 @@
   </li>
 </ul>
 
-<router-outlet></router-outlet>
+<router-outlet></router-outlet> -->
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="over" opened>
+    <main-sidenav-content></main-sidenav-content>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

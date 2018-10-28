@@ -1,0 +1,5 @@
+<div class = "content-container">
+  <div *ngFor="let menuItem of menu" class ="menu-item" (click)="menuClick(menuItem)">
+    {{menuItem.name}}
+  </div>
+</div>
